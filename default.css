@@ -10,7 +10,7 @@ body {
   overflow: auto;
 }
 a {
-  color: white;
+  color: black;
   font-size: 14px;
 }
 #main {
@@ -19,7 +19,7 @@ a {
 #wrap {
   position: relative;
   margin: 0 auto;
-  width: 1100px;
+  width: 1200px;
   height: 680px;
   margin-top: 10px;
 }
@@ -74,13 +74,111 @@ a {
   margin-left: 10px;
 }
 .space {
-  margin-right: 150px;
+  margin-right: 120px;
 }
 
 #message-box{
   position: absolute;
-  margin-top:450px;
+  margin-top:540px;
   font-size: 25px;
   font-family: monospace;
 
+}
+.container{
+    perspective: 800px;
+}
+.card{
+    width: 420px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    right : 100px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.block{
+    position: absolute;
+    top:120px;
+    right: 550px;
+    perspective: 800px;
+}
+.outside,.inside{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+}
+.outside{
+    background-color: blanchedalmond;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.outside h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: salmon;
+    margin-bottom: 30px;
+}
+.outside h3{
+    font-size: 1.2rem;
+    --font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
+.inside{
+    background-color: rgb(255, 244, 79);
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.inside h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+      color: salmon;
+    margin-top: 20px;
+}
+.frames{
+    width: 1000px;
+    height: 150px;
+    left :1050px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 0 0.8rem;
+
+    transform: rotateY(-230deg) rotateX(20deg);
+    position: absolute;
+}
+.frames img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.frames p{
+   font-size: 20px;
+   font-weight: bold;
+   transform: rotateY(180deg);
+}
+.frames:nth-child(1)
+{
+    top:-110px;
+    z-index: -1;
+    background-color: coral;
+}
+.frames:nth-child(2){
+    background-color: goldenrod;
+}
+.frames:nth-child(3)
+{
+    top:100px;
+    background-color: burlywood;
 }
