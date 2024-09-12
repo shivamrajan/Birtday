@@ -170,9 +170,12 @@ a {
 }
 .frames:nth-child(1)
 {
-    top:-110px;
+   top:-110px;
+    width :200px
     z-index: -1;
     background-color: coral;
+    left: 1150px;
+    right :100px
 }
 .frames:nth-child(2){
     top : 50px;
