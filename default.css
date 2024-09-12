@@ -147,20 +147,20 @@ a {
 .frames{
     width: 1000px;
     height: 150px;
-    left :1050px;
+    left :1150px;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: right;
     justify-content: right;
-    padding: 0 0.8rem;
+    padding: 0 0.9rem;
 
-    transform: rotateY(-230deg) rotateX(20deg);
+    transform: rotateY(-240deg) rotateX(30deg);
     position: absolute;
 }
 .frames img{
     width: 125px;
     height: 125px;
-    border-radius: 50%;
+    border-radius: 40%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 .frames p{
